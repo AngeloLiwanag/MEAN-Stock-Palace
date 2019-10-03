@@ -1,17 +1,20 @@
-<h3 class="mt-5 ml-5">All Items</h3>
-<div class="all-imgs body-container" *ngFor="let item of all_items">
-    <div class="all-imgs">
-        <div class="card box-shadow m-5" style="max-width: 15rem;">
-            <div class="card-body">
-                <img class="small-img" src="{{item.imgUrl}}" alt="">
-            </div>
-            <div class="card-header">
-                {{item.title}}
-                <h3>${{item.price}}</h3>
-                <button class="btn btn-primary btn-sm" [routerLink]="['view', item._id]">View</button>
+<div class="main-body">
+    <h3 class="mt-5 ml-5">All Items</h3>
+    <div class="all-imgs body-container" *ngFor="let item of all_items">
+        <div class="all-imgs">
+            <div class="card box-shadow m-5" style="max-width: 15rem;">
+                <div class="card-body">
+                    <img class="small-img" src="{{item.imgUrl}}" alt="">
+                </div>
+                <div class="card-header">
+                    {{item.title}}
+                    <h3>${{item.price}}</h3>
+                    <button class="btn btn-primary btn-sm" [routerLink]="['view', item._id]">View</button>
+                </div>
             </div>
         </div>
     </div>
+
 </div>
             <!-- Footer -->
 	<section id="footer">

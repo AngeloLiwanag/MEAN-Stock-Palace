@@ -1,4 +1,7 @@
 /* Main Body */
+/* .main-body{
+    height: 100vh;
+} */
 .box-shadow{
     box-shadow: 5px 5px 30px;
 }
@@ -11,9 +14,7 @@
 .all-imgs{
     display: inline-block;
 }
-.body-container{
-    height:700px;
-}
+
 /* Footer */
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 section {
